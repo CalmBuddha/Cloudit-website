@@ -385,14 +385,9 @@ p.hidden {
         grid-column: 1;
     }
 
-    .features-main .flex *:first-child {
-        flex: 1;
+    .features-main .flex {
+        justify-content: flex-start;
     }
-
-    .features-main .flex *:nth-child(2) {
-        flex: 5;
-    }
-
 
     .showcase .showcase-text {
         animation: slideInFromTop 1s ease-In;
