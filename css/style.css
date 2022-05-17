@@ -96,7 +96,6 @@ ul {
     bottom: -70px;
     height: 100px;
     background-color: #fff;
-    background-color: #fff;
     transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
@@ -219,6 +218,13 @@ p.hidden {
     font-weight: 500;
 }
 
+/* FOOTER
+---------------------------------------------------------------------------------------------*/
+
+.footer .social a {
+    margin: 0 10px;
+}
+
 /* FEATURES
 ---------------------------------------------------------------------------------------------*/
 
@@ -276,13 +282,6 @@ p.hidden {
     font-weight: bold;
 }
 
-/* FOOTER
----------------------------------------------------------------------------------------------*/
-
-.footer .social a {
-    margin: 0 10px;
-}
-
 /* ANIMATION
 ---------------------------------------------------------------------------------------------*/
 
@@ -312,16 +311,17 @@ p.hidden {
     }
 
     1000% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
+
 @keyframes slideInFromBottom {
     0% {
         transform: translateY(100%);
     }
 
     1000% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -384,8 +384,12 @@ p.hidden {
         grid-column: 1;
     }
 
-    .features-main .flex {
-        justify-content: start;
+    .features-main .flex *:first-child {
+        flex: 1;
+    }
+
+    .features-main .flex *:nth-child(2) {
+        flex: 6;
     }
 
     .showcase .showcase-text {
