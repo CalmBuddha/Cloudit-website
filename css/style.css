@@ -10,6 +10,7 @@
 }
 
 body {
+    width: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     color: #333333;
@@ -389,8 +390,9 @@ p.hidden {
     }
 
     .features-main .flex *:nth-child(2) {
-        flex: 6;
+        flex: 5;
     }
+
 
     .showcase .showcase-text {
         animation: slideInFromTop 1s ease-In;
