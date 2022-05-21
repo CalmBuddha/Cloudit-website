@@ -239,8 +239,12 @@ p.hidden {
     width: 300px;
 }
 
-.features-main .card i {
-    margin-right: 20px;
+.features-main .flex *:nth-child(1) {
+    flex: 0 0 80px;
+}
+
+.features-main .flex *:nth-child(2) {
+    flex: 1 1 auto;
 }
 
 .features-main .grid {
